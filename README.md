@@ -1,5 +1,7 @@
 # COVID-19India Tracker Live Cases
 
+Here is the link view site: http://venugopalboddu.000webhostapp.com/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 ## Development server
