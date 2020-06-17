@@ -1,4 +1,4 @@
-# COVID-19India Tracker Live Cases
+# COVID-19 India Tracker Live Cases
 
 Here is the link view site: http://venugopalboddu.000webhostapp.com/
 
