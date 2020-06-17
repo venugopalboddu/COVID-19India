@@ -1,5 +1,7 @@
 # COVID-19 India Tracker Live Cases
 
+This web application shows the data of the pandemic situation about COVID-19 India live cases with including state-wise data also.
+
 Here is the link view site: http://venugopalboddu.000webhostapp.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
