@@ -12,6 +12,9 @@ export class ApiService {
     return this.http.get('https://api.covidindiatracker.com/total.json');
   }
   getSt(){
-    return this.http.get('https://api.covidindiatracker.com/state_data.json');
+     return this.http.get('https://api.covidindiatracker.com/state_data.json');
+  }
+  getDt(){
+    return this.http.get('https://api.covid19india.org/v2/state_district_wise.json');
   }
 }

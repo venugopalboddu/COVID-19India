@@ -56,8 +56,7 @@
       
             </div>
           </div>
-        </header>
-  
+        </header> 
       <br/>
           <div class="site-section bg-light" id="services-section">
                 <div class="container">
@@ -68,22 +67,25 @@
                            <th scope="col">Sno</th>
                            <th scope="col">District</th>
                            <th scope="col" style="color: red">Confirmed</th>
-                           <th scope="col">Zone</th>
+                           <th scope="col" style="color: blue">Active</th>
+                           <th scope="col" style="color: green">Recovered</th>
+                           <th scope="col" style="color: grey">Deaths</th>
                          </tr>
                        </thead>
                        <tbody *ngFor="let s of dis">
                          <tr *ngFor="let d of s.districtData; let ndx = index">
                            <td>{{ndx+1}}</td>
-                           <td>{{d.name}}</td>
+                           <td>{{d.district}}</td>
                            <td><span style="color: red">{{d.confirmed}}</span></td>
-                           <td>{{d.zone}}</td>
+                           <td><span style="color: blue">{{d.active}}</span></td>
+                           <td><span style="color: green">{{d.recovered}}</span></td>
+                           <td><span style="color: grey">{{d.deceased}}</span></td>
                          </tr>
                        </tbody>
                      </table>
                 </div>
           </div>
-      
-      
+
           <footer class="site-footer">
             <div class="container">
               <div class="border-top pt-5">

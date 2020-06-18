@@ -22,9 +22,9 @@ export class StateComponent implements OnInit {
     var m = this.ar.snapshot.params.state;
     this.st = m;
 
-    this.ds.getSt().subscribe((resp)=>{
+    this.ds.getDt().subscribe((resp)=>{
       this.sdata = resp;
-      //console.log("State", this.sdata);
+      console.log("State", this.sdata);
 
       this.dataIs = this.sdata.find(x => x.state === m);
       //console.log(this.dataIs);

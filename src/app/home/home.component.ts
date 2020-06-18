@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
     this.ds.getSt().subscribe((resp)=>{
      this.sdata = resp;
      //console.log("State", this.sdata);
+
     });
   }
   // getDistrict(idIs) {
