@@ -24,22 +24,21 @@ export class HomeComponent implements OnInit {
   getData(){
   this.ds.getCon().subscribe((res)=>{
     this.data = res;
-    console.log("Con", this.data);
+    //console.log("Con", this.data);
   });
   }
   getStates(){
     this.ds.getSt().subscribe((resp)=>{
      this.sdata = resp;
-     console.log("State", this.sdata);
+     //console.log("State", this.sdata);
     });
   }
-  getDistrict(idIs) {
-    console.log(idIs);
-    this.dataIs = this.sdata.find(x => x.id === idIs);
-    console.log(this.dataIs);
-    this.dis = Array.of(this.dataIs);
-    console.log("TeD", this.dis);
-    //console.log("district data is "+JSON.stringify(this.dataIs.districtData));
-    
-  }
+  // getDistrict(idIs) {
+  //   console.log(idIs);
+  //   this.dataIs = this.sdata.find(x => x.id === idIs);
+  //   console.log(this.dataIs);
+  //   this.dis = Array.of(this.dataIs);
+  //   console.log("TeD", this.dis);
+  //   console.log("district data is "+JSON.stringify(this.dataIs.districtData));
+  // }
 }
