@@ -1,0 +1,98 @@
+<div class="site-wrap"  id="home-section">
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div>
+      
+        <div class="top-bar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <a href="#" class="text-white"><span class="mr-2 text-white icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">info@yourdomain.com</span></a>
+                <span class="mx-md-2 d-inline-block"></span>
+                <a href="#" class="text-white"><span class="mr-2 text-white icon-phone"></span> <span class="d-none d-md-inline-block">1+ (91) 12345 6789</span></a>
+                
+      
+                <div class="float-right">
+      
+                <a href="#" class="text-white"><span class="mr-2 text-white icon-twitter"></span> <span class="d-none d-md-inline-block">Twitter</span></a>
+                <span class="mx-md-2 d-inline-block"></span>
+                <a href="#" class="text-white"><span class="mr-2 text-white icon-instagram"></span> <span class="d-none d-md-inline-block">Instagram</span></a>
+      
+                </div>
+      
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+      
+          <div class="container">
+            <div class="row align-items-center position-relative">
+              
+                
+                <div class="site-logo">
+                  <a href="index.html" class="text-black"><img src="https://cdn.pixabay.com/photo/2020/03/19/15/09/coronavirus-4947717_960_720.png" width="80px" height="60px"/><span class="text-primary">COVID-19 India</span></a>
+                </div>
+                
+                <div class="col-12">
+                  <nav class="site-navigation text-right ml-auto " role="navigation">
+      
+                    <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                  
+                  </ul>
+                  </nav>
+              
+                </div>
+      
+              <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+      
+            </div>
+          </div>
+        </header>
+  
+      <br/>
+          <div class="site-section bg-light" id="services-section">
+                <div class="container">
+                        <h3>THE FOLLOWING ARE THE <span style="background-color:rgb(243, 228, 11)">District</span> wise DATA OF COVID-19 OUTBREAK CASES</h3><hr/><br/>
+                    <table>
+                       <thead>
+                         <tr>
+                           <th scope="col">Sno</th>
+                           <th scope="col">District</th>
+                           <th scope="col" style="color: red">Confirmed</th>
+                           <th scope="col">Zone</th>
+                         </tr>
+                       </thead>
+                       <tbody *ngFor="let s of dis">
+                         <tr *ngFor="let d of s.districtData; let ndx = index">
+                           <td>{{ndx+1}}</td>
+                           <td>{{d.name}}</td>
+                           <td><span style="color: red">{{d.confirmed}}</span></td>
+                           <td>{{d.zone}}</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                </div>
+          </div>
+      
+      
+          <footer class="site-footer">
+            <div class="container">
+              <div class="border-top pt-5">
+                <p class="copyright" style="text-align: center"><small>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://venugopalboddu.blogspot.com/" target="_blank" >Venugopal Boddu</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </small></p>
+                </div>
+            </div>
+          </footer>
+      </div>
